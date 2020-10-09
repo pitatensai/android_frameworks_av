@@ -953,8 +953,8 @@ status_t Parameters::initialize(CameraDeviceBase *device, int deviceVersion) {
         // Slow jpeg devices does not support video snapshot without
         // slowing down preview.
         // TODO: support video size video snapshot only?
-        params.set(CameraParameters::KEY_VIDEO_SNAPSHOT_SUPPORTED,
-            CameraParameters::FALSE);
+        //params.set(CameraParameters::KEY_VIDEO_SNAPSHOT_SUPPORTED,
+        //    CameraParameters::FALSE);
     }
 
     isZslReprocessPresent = false;
@@ -2980,7 +2980,7 @@ status_t Parameters::getFilteredSizes(Size limit, Vector<Size> *sizes) {
                     {sc.width, sc.height}, HAL_PIXEL_FORMAT_IMPLEMENTATION_DEFINED);
             if (minFrameDuration > MAX_PREVIEW_RECORD_DURATION_NS) {
                 // Filter slow sizes from preview/record
-                continue;
+                //continue;
             }
             sizes->push({sc.width, sc.height});
         }
