@@ -3089,7 +3089,7 @@ bool Parameters::isFpsSupported(const Vector<Size> &sizes, int format, int32_t f
         // Add some margin here for the case where the hal supports 29.xxxfps.
         maxSupportedFps += FPS_MARGIN;
         if (fps > maxSupportedFps) {
-            return false;
+            //return false;
         }
     }
     return true;
