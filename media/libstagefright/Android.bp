@@ -173,7 +173,6 @@ cc_library_shared {
         "libsync",
         "libui",
         "libutils",
-        "librga",
     ],
 
     static_libs: [
